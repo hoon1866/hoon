@@ -4,49 +4,61 @@
     <meta charset="UTF-8">
     <title>ID Card Main</title>
     <style>
-    @keyframes advanced{
-        0%{background: rgba(137, 16, 16, 0.51); left: 0px; top: 50px; }
-        50%{background: green; left: 300px; top: 50px; }
-        100%{background: blue; left: 0px; top: 50px; }
-
-    }
-        div#main_profile{
-        width:800px;
-        height:440px;
+        html body{
+            height: 100%; width: 100%;
+        }
+        .background{
+            width: 100%; 
+            height: 100%;
+            margin: 0% 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            float: center;
+            
+        }
+        /* @keyframes advanced{
+            0%{background: rgba(137, 16, 16, 0.51); left: 0px; top: 50px; }
+            50%{background: green; left: 300px; top: 50px; }
+            100%{background: blue; left: 0px; top: 50px; }
+        } */
+        .main_profile{
+        width:400px;
+        height:240px;
         animation-name: advanced;
         animation-duration: 0s;
         animation-iteration-count: 10;
-        position:relative;
         background: rgb(133, 70, 70);
-        margin: 20px auto 20px auto;
-        padding: 1% 1% 1% 1%;
+        padding: 5px 5px 5px 5px;
         border: solid 1px #aaaaaa;
         border-radius: 10px;
-        position: relative;
-        
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        margin-left: -200px;
+
         }
         #side_left_box1{
-        height: 35%;
+        height: 100px;
         background-color:rgb(43, 28, 28);
         color: white;
-        margin: 0px 0px 1% 0px;
-        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 5px 0px 5px;
         border: solid 1px black;
         border-radius: 15px;
-        line-height: 22px;
         }
         #side_left_box2{
-        height:62%;
+        height: 130px;
         background-color:#aaaaaa;
         color: white;
-        margin: 1% 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
+        padding: 0px 5px 0px 5px;
         border: solid 1px #aaaaaa;
         border-radius: 15px;
         }
+
         .title{
             width: 110px;
-            font-size: 23px;
+            height: 10px;
+            font-size: 15px;
             text-align:center;
             padding-bottom: 5px;
             margin-left: auto;
@@ -54,67 +66,63 @@
             border-left: solid 5px rgb(137, 70,70) ;
             border-right: solid 5px rgb(137, 70,70) ;
         }
-        #mottos{
-            width: 550px;
+        .mottos{
+            width: auto;
             margin-left: auto;
             margin-right: auto;
-            font-size: 41px;
-            line-height: 55px;
-            /* padding-left:inherit; */
-            /* padding-left: initial; */
-            /* padding-left: unset; */
-            text-align: left;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .selfintro1{
+            width: 48%;
+            font-size: 10px;
+            float: left;
+        }
+        .selfintro2{
+            width: 48%;
+            font-size: 10px;
+            float: left;
         }
         .mottos_font{
             color: black;
-            text-shadow: 2px 2px black;
+            text-shadow: 2px 2px gray;
             font-style: oblique;
         }
-        .link_to_sub{
-            max-width: 70px;
-            text-align: center;
-            padding: 5px 10px 5px 10px;
-            margin: auto auto auto auto;
-            border: solid 5px rgb(32, 220, 32);
-        }
-        #naver{
-            font-size: 20px;
-            font-family: "맑은 고딕";
-        }
-        body{
-            background-image: url(https://github.com/hoon1866/hoon/blob/main/pic2.jpg?raw=true);
-            background-repeat: no-repeat;
-            /* background-size: 940px 628px; */
-            background-size: cover;
-            }
+        
       </style>
 
 
 </head>
 <body>
-    <div id = "main_profile">
-        <div id = "side_left_box1">
-            <h1 class="title">자기소개</h1>
-            <ul>
-                <li style="font-style: italic;">이름: 조계훈</li>
-                <li style="font-style: normal;">출생: 2000년 4월 11일</li>
-                <li style="font-style: oblique;">학과: 의생명과학과</li>
-                <li style="font-style: italic;">학번: 20194138</li>
-        
-            </ul>
-        </div>
-        <div id = "side_left_box2">
-            <h1 class="title">Motto</h1>
-            <p id="mottos">
-                &nbsp;&nbsp;&nbsp;<span class="mottos_font">Think harder</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;And <span class="mottos_font">Go down deeper</span>
-            </p>
+    <div class="background">
+        <img src="pic2.jpg" width="100%", height="100%" alt="">
+
+        <div class = "main_profile">
+            <div id = "side_left_box1">
+                <h1 class="title">자기소개</h1>
+                    <div class="selfintro1">
+                    <ul>
+                        <li style="font-style: italic;">이름: 조계훈</li>
+                        <li style="font-style: normal;">출생: 2000년 4월 11일</li>
+                    </ul>
+                    </div>
+                    <div class="selfintro2">
+                    <ul>
+                        <li style="font-style: oblique;">학과: 의생명과학과</li>
+                        <li style="font-style: italic;">학번: 20194138</li>
+                    </ul>
+                    </div>
+            </div>
+            <div id = "side_left_box2">
+                <h1 class="title">Motto</h1>
+                <div class ="mottos">
+                    <span class="mottos_font">Think harder</span><br>
+                    And <span class="mottos_font">Go down deeper</span>
+                </div>
+            </div>
         </div>
     </div>
     
-    <p class="link_to_sub">
-        <a href="http://www.naver.com" id="naver">Naver</a>
-    </p>
 </body>
 </html>
