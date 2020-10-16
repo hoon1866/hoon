@@ -16,7 +16,7 @@
             height: 150px;
             padding: 5px 5px 5px 5px;
             position: relative;
-            background-image: url('https://github.com/hoon1866/hoon/blob/main/wp2.jpg?raw=true');
+            background-image: url('wp2.jpg');
             background-position-x: center;
             background-size: 1500px;
         }
@@ -24,43 +24,29 @@
             color: #2c383a;
             font-size: 100px;
             font-weight: bold;
-            left: 5%;
-            top: 50px;
-            z-index: 1;
+            left: 50%;
+            margin-top: 50px;
+            margin-left: -600px;
             position: absolute;
         }
-        /* #logo img{
-            padding: 0 0 0 300px;
-            z-index: 0;
-            position: absolute;
-        } */
         #logo ul{
             margin-top: 5px;         
             position: absolute;
-            right: 5%   ;
+            right: 5%;
         }
         #logo li{
             list-style-type: none;
             color: black;
             display: inline;
             font-weight: bold;
-            font-size: 10px;
+            font-size: 15px;
             font-family: "맑은 고딕";
             text-align: center;
         }
 
         body{
             width: 100%;
-            /* margin-left: -950px; */
-            /* background-image: url('High_resolution_wallpaper_background_ID_77700033390-1.jpg');
-            background-repeat: no-repeat;
-            background-size: cover; */
-            /* width: 1210px; */
             margin: 0px auto;
-            /* background-image: url('wp2.jpg');
-            background-repeat:repeat-y;
-            background-position-x: center;
-            background-size: 1500px; */
         }
     
         #banner{
@@ -91,6 +77,16 @@
             color: black;
             background-color: rgb(116, 156, 196);
         }
+        #screen div{
+            width: 1000px; height: 500px;
+            left: 50%;
+            margin-left: -500px;
+            background-image: url("https://github.com/hoon1866/hoon/blob/main/JE.jpg?raw=true");
+            background-size: 1000px 500px;
+            background-position: center;
+            position: relative;
+        }
+
 
         #wraper{
             border: 1px solid black;
@@ -173,7 +169,6 @@
             <li>&nbsp;회원가입&nbsp;|</li>
             <li>&nbsp;고객센터</li>
         </ul>
-        <!-- <img src="roarlogo.jpg" height="200px"> -->
     </div>
 
 
@@ -187,12 +182,13 @@
         </ul>
     </div>
 
-    <div id="screen">활동 사진이 대문짝만하게 들어갈 곳.</div>
+    <div id="screen">
+        <div></div>
+    </div>
 
     <div id="wraper">
         <div id="sidebar">
                 <nav>
-                    
                     <ul>
                         <h4>메인 메뉴</h4>
                         <li>A란</li>
